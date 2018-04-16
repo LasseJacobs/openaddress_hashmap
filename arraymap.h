@@ -102,7 +102,7 @@ public:
 
     /**
      * Returns a reference to the mapped value of the element 
-     * with key equivalent to key. If no such element exists, 
+     * with a key equivalent to key. If no such element exists, 
      * an exception of type std::out_of_range is thrown.
      * 
      * @param key - the key of the element to find
@@ -211,8 +211,8 @@ public:
     }
     
     /**
-     * Returns the average number of elements per bucket, 
-     * that is, size() divided by capacity().
+     * Returns the ratio between elements in the container 
+     * and the capacity of the container.
      * 
      * @return The load factor of the container.
      */
@@ -220,7 +220,7 @@ public:
         return (float)_values.size() / (float)_values.capacity();
     }
     /**
-     * Manages the maximum load factor.
+     * Returns the maximum allowed load factor before rehashing occurs..
      * 
      * @return Returns current maximum load factor. 
      */
