@@ -9,16 +9,16 @@ specialization of `std::hash` for that type (for more information
 
 Example:
 ```c++
-	#include"arraymap.h"
+#include"arraymap.h"
 
-	int main(int argc, char** argv) {
-		ljl::array_map<int, std::string> map;
-		
-		map.emplace(1, "1");
-		std::cout << map.at(1) << std::endl;
-	   
-		return 0;
-	}
+int main(int argc, char** argv) {
+    ljl::array_map<int, std::string> map;
+	
+    map.emplace(1, "1");
+    std::cout << map.at(1) << std::endl;
+   
+    return 0;
+}
 
 ```
 
@@ -88,20 +88,24 @@ If you have discovered a bug, please let me know by creating a new [issue](https
 The project is a header only library but it does come with a `main` function for testing.
 You can compile the project using `make`.
 Cloning the project:
-	$ git clone https://github.com/LasseJacobs/openaddress_hashmap.git
+
+    $ git clone https://github.com/LasseJacobs/openaddress_hashmap.git
 
 Building:
-	$ cd openaddress_hashmap/
-	$ make
+
+    $ cd openaddress_hashmap/
+    $ make
 	
 Running the 'demo' (although this command may vary if you are not using Linux):
-	$ ./dist/Debug/GNU-Linux/hashmap
-	$ > 1
-	$ > Element not found
+    
+    $ ./dist/Debug/GNU-Linux/hashmap
+    $ > 1
+    $ > Element not found
 	
 The project also comes with a number of tests to help you validate your changes.
 To run the tests:
-	$ make test
+    
+    $ make test
 	
 ## The TODO list:
 There are a number of important things missing or things that need work, mainly
