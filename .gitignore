@@ -41,3 +41,6 @@ nbdist/
 
 # Folders
 docs/xml
+
+# Misc
+.dep.inc
