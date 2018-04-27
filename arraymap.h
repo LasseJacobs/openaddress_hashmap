@@ -314,7 +314,7 @@ private:
 
     size_type hash(const key_type& key) const {
         size_t hash = std::hash<key_type>{}(key);
-        return hash;
+        return hash % _values.capacity();
     }
     
     size_type find_element(const key_type& key) const {

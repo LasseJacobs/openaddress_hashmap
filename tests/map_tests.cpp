@@ -37,7 +37,7 @@ void map_tests::test_capacity() {
 }
 
 void map_tests::test_emplace() {
-    auto it = _map.emplace(4, "four");
+    auto it = _map.emplace(44, "four");
     CPPUNIT_ASSERT(_map.size() == 1 && it.second);
 }
 
